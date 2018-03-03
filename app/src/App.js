@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-
-class App extends Component {
-  render() {
+import React from 'react';
+import Nav from './components/Nav';
+const App = () => {
     return (
-      <h1> Placeholder </h1>
+      <div>
+        <Nav />
+        {/* <Game /> */}
+      </div>
     )
-  }
 }
 
 export default App;
