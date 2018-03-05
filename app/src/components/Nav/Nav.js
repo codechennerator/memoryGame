@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nav = () =>
+const Nav = (props) =>
     <div className = "contianer-fluid">
         <nav className = "navbar navbar-inverse navbar-top" style = {{"marginBottom" : 0}}>
             <div className = "container">
@@ -17,7 +17,7 @@ const Nav = () =>
            
                 <div className="collapse navbar-collapse">
                     <ul className="nav navbar-nav navbar-right">
-                        <li><a className = "text-white"><strong>Score: 0 | Top Score: 12</strong></a></li>
+                        <li><a className = "text-white"><strong>Score: {props.currentScore} | Top Score: {props.highScore}</strong></a></li>
                     </ul>
                 </div>
             </div>
